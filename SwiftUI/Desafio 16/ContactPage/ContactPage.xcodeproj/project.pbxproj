@@ -12,6 +12,7 @@
 		B1F00DF729F8950C00D8706D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B1F00DF629F8950C00D8706D /* Assets.xcassets */; };
 		B1F00DFA29F8950C00D8706D /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B1F00DF929F8950C00D8706D /* Preview Assets.xcassets */; };
 		B1F00E0429F8977100D8706D /* Color.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1F00E0329F8977100D8706D /* Color.swift */; };
+		B1F00E0729F89BA600D8706D /* CPIcons.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1F00E0629F89BA600D8706D /* CPIcons.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -21,6 +22,7 @@
 		B1F00DF629F8950C00D8706D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		B1F00DF929F8950C00D8706D /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		B1F00E0329F8977100D8706D /* Color.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Color.swift; sourceTree = "<group>"; };
+		B1F00E0629F89BA600D8706D /* CPIcons.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CPIcons.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -53,6 +55,7 @@
 		B1F00DF129F8950B00D8706D /* ContactPage */ = {
 			isa = PBXGroup;
 			children = (
+				B1F00E0529F89B9400D8706D /* Components */,
 				B1F00E0229F8958D00D8706D /* Extensions */,
 				B1F00DF229F8950B00D8706D /* ContactPageApp.swift */,
 				B1F00E0129F8955200D8706D /* View */,
@@ -92,6 +95,14 @@
 				B1F00E0329F8977100D8706D /* Color.swift */,
 			);
 			path = Extensions;
+			sourceTree = "<group>";
+		};
+		B1F00E0529F89B9400D8706D /* Components */ = {
+			isa = PBXGroup;
+			children = (
+				B1F00E0629F89BA600D8706D /* CPIcons.swift */,
+			);
+			path = Components;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -167,6 +178,7 @@
 				B1F00DF529F8950B00D8706D /* CPHomeView.swift in Sources */,
 				B1F00DF329F8950B00D8706D /* ContactPageApp.swift in Sources */,
 				B1F00E0429F8977100D8706D /* Color.swift in Sources */,
+				B1F00E0729F89BA600D8706D /* CPIcons.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

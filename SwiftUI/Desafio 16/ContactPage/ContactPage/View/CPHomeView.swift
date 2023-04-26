@@ -9,8 +9,40 @@ import SwiftUI
 
 struct CPHomeView: View {
     var body: some View {
-        Text("Hello, world!")
-            .padding()
+        ZStack {
+            Color.theme.background
+            
+            HStack {
+                HStack {
+                    Text("Meus Contatos")
+                        .fontWeight(.bold)
+                        .foregroundColor(Color.theme.primaryTextColor)
+                        .font(.system(size: 20))
+                        .padding(20)
+                    
+                    Spacer()
+                    
+                    HStack(spacing: 20) {
+                        CPIcons(imageSystemName: "plus") {
+                            print("plus")
+                        }
+                        CPIcons(imageSystemName: "pencil") {
+                            print("pencil")
+                        }
+                        CPIcons(imageSystemName: "trash.fill") {
+                            print("trash")
+                        }
+                    }
+                    .foregroundColor(Color.theme.primaryTextColor)
+                    
+                    .padding(20)
+                }
+                .frame(width: .infinity, height: 168)
+                .background(Color.theme.headerBackground)
+            }
+            
+        }
+        .ignoresSafeArea()
     }
 }
 
