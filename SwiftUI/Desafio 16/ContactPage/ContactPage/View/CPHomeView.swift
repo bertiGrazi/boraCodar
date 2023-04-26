@@ -8,11 +8,13 @@
 import SwiftUI
 
 struct CPHomeView: View {
+    @State private var text: String = ""
+    
     var body: some View {
         ZStack {
             Color.theme.background
             
-            HStack {
+            VStack {
                 HStack {
                     Text("Meus Contatos")
                         .fontWeight(.bold)
@@ -37,9 +39,14 @@ struct CPHomeView: View {
                     
                     .padding(20)
                 }
-                .frame(width: .infinity, height: 168)
-                .background(Color.theme.headerBackground)
+
+                //TODO Placeholder White TextFiled
+                TextField("Busque por nome ou por dados de contato...", text: $text)
+                    .foregroundColor(Color.theme.primaryTextColor)
+                    .background(Color.theme.background)
             }
+            .frame(width: .infinity, height: 168)
+            .background(Color.theme.headerBackground)
             
         }
         .ignoresSafeArea()
